@@ -1,0 +1,39 @@
+{
+    "@@locale": "vi",
+    "menuNewGame": "Trò chơi mới",
+    "@menuNewGame": {
+        "description": "Menu của nút 'Trò chơi mới'"
+    },
+    "menuContinueGame": "Tiếp tục trò chơi",
+    "@menuContinueGame": {
+        "description": "Menu của nút 'Tiếp tục trò chơi'"
+    },
+    "levelCancel": "Hủy bỏ",
+    "levelEasy": "Dễ",
+    "levelMedium": "Trung bình",
+    "levelHard": "Khó",
+    "levelExpert": "Chuyên gia",
+    "sudokuGenerateText": "Đang chờ tạo Sudoku...",
+    "gameStatusInitialize": "Khởi tạo",
+    "gameStatusGaming": "Đang chơi",
+    "gameStatusPause": "Tạm dừng",
+    "gameStatusFailure": "Thất bại",
+    "gameStatusVictory": "Thắng lợi",
+    "wrongInputAlertText": "Nhập sai\nBạn không thể chấp nhận thêm %attempts% lần đổi lượt",
+    "gotItText": "Đã hiểu",
+    "levelText": "Cấp độ",
+    "tipsText": "Mẹo ngẫu nhiên",
+    "enableMarkText": "Bật chú ý",
+    "closeMarkText": "Đóng chú ý",
+    "exitGameText": "Thoát trò chơi",
+    "exitGameContentText": "Bạn có muốn kết thúc vòng Sudoku này không?",
+    "openText": "Mở",
+    "cancelText": "Hủy bỏ",
+    "pauseText": "Tạm dừng trò chơi",
+    "markText": "Đánh dấu",
+    "pauseGameText": "Đã tạm dừng",
+    "elapsedTimeText": "Thời gian trôi qua",
+    "continueGameContentText": "Nhấn đôi vào màn hình để tiếp tục chơi",
+    "winnerConclusionText": "Chúc mừng bạn đã hoàn thành thách thức Sudoku cấp độ [%level%]!",
+    "failureConclusionText": "Rất tiếc, vòng Sudoku cấp độ [%level%] này đã có quá nhiều lỗi, thách thức thất bại!"
+}

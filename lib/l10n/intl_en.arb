@@ -1,0 +1,39 @@
+{
+    "@@locale": "en",
+    "menuNewGame": "New Game",
+    "@menuNewGame": {
+        "description": "menu of 'new gme' button text"
+    },
+    "menuContinueGame": "Continue Game",
+    "@menuContinueGame": {
+        "description": "menu of 'continue game' button text"
+    },
+    "levelCancel": "Cancel",
+    "levelEasy": "Easy",
+    "levelMedium": "Medium",
+    "levelHard": "Hard",
+    "levelExpert": "Expert",
+    "sudokuGenerateText": "Waiting for sudoku generated...",
+    "gameStatusInitialize": "Initialize",
+    "gameStatusGaming": "Gaming",
+    "gameStatusPause": "Pause",
+    "gameStatusFailure": "Failure",
+    "gameStatusVictory": "Victory",
+    "wrongInputAlertText": "Wrong Input\nYou can't afford %attempts% more turnovers",
+    "gotItText": "Got It",
+    "levelText": "Level",
+    "tipsText": "Random Tips",
+    "enableMarkText": "Enable Note",
+    "closeMarkText": "Close Note",
+    "exitGameText": "Exit Game",
+    "exitGameContentText": "Whether to end this round of Sudoku ?",
+    "openText": "Open",
+    "cancelText": "Cancel",
+    "pauseText": "Pause Game",
+    "markText": "Mark",
+    "pauseGameText": "Paused",
+    "elapsedTimeText": "elapsed time",
+    "continueGameContentText": "Double click the screen to continue playing",
+    "winnerConclusionText": "Congratulations on completing the [%level%] Sudoku challenge!",
+    "failureConclusionText": "Unfortunately, this round of [%level%] Sudoku errors too many times, challenge failed!"
+}

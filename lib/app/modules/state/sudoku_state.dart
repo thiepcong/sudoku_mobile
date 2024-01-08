@@ -4,7 +4,7 @@ import 'package:scoped_model/scoped_model.dart';
 import 'package:sprintf/sprintf.dart';
 import 'package:sudoku_dart/sudoku_dart.dart';
 
-import '../constant.dart';
+import '../../core/values/constant.dart';
 import 'hive/level_type_adapter.dart';
 import 'hive/sudoku_type_adapter.dart';
 
@@ -93,7 +93,7 @@ class SudokuState extends Model {
   }
 
   static SudokuState newSudokuState({Level? level, Sudoku? sudoku}) {
-    SudokuState state = new SudokuState(level: level, sudoku: sudoku);
+    SudokuState state = SudokuState(level: level, sudoku: sudoku);
     return state;
   }
 

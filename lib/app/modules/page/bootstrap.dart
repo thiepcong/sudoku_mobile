@@ -8,9 +8,9 @@ import 'package:modal_bottom_sheet/modal_bottom_sheet.dart';
 import 'package:scoped_model/scoped_model.dart';
 import 'package:sudoku_dart/sudoku_dart.dart';
 
-import '../generated/l10n.dart';
+import '../../../generated/l10n.dart';
+import '../../core/util/localization_util.dart';
 import '../state/sudoku_state.dart';
-import '../util/localization_util.dart';
 
 final Logger log = Logger();
 
@@ -20,7 +20,7 @@ class BootstrapPage extends StatefulWidget {
   final String title;
 
   @override
-  _BootstrapPageState createState() => _BootstrapPageState();
+  State<BootstrapPage> createState() => _BootstrapPageState();
 }
 
 Widget _buttonWrapper(

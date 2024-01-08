@@ -4,11 +4,11 @@ import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:logger/logger.dart';
 import 'package:scoped_model/scoped_model.dart';
 
-import 'effect/sound_effect.dart';
+import 'app/core/effect/sound_effect.dart';
+import 'app/modules/state/sudoku_state.dart';
 import 'generated/l10n.dart';
-import 'page/bootstrap.dart';
-import 'page/sudoku_game.dart';
-import 'state/sudoku_state.dart';
+import 'app/modules/page/bootstrap.dart';
+import 'app/modules/page/sudoku_game.dart';
 
 final Logger log = Logger();
 

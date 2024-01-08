@@ -1,8 +1,8 @@
 import 'package:flutter/widgets.dart';
 import 'package:sudoku_dart/sudoku_dart.dart';
 
-import '../generated/l10n.dart';
-import '../state/sudoku_state.dart';
+import '../../../generated/l10n.dart';
+import '../../modules/state/sudoku_state.dart';
 
 /// LocalizationUtils
 class LocalizationUtils {

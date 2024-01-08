@@ -9,11 +9,11 @@ import 'package:scoped_model/scoped_model.dart';
 import 'package:sudoku_dart/sudoku_dart.dart';
 import 'package:url_launcher/url_launcher_string.dart';
 
-import '../constant.dart';
-import '../effect/sound_effect.dart';
-import '../generated/l10n.dart';
+import '../../core/values/constant.dart';
+import '../../core/effect/sound_effect.dart';
+import '../../../generated/l10n.dart';
+import '../../core/util/localization_util.dart';
 import '../state/sudoku_state.dart';
-import '../util/localization_util.dart';
 import 'sudoku_pause_cover.dart';
 
 final Logger log = Logger();
@@ -53,11 +53,11 @@ const Image lifePng = Image(
 );
 
 class SudokuGamePage extends StatefulWidget {
-  SudokuGamePage({Key? key, required this.title}) : super(key: key);
+  const SudokuGamePage({Key? key, required this.title}) : super(key: key);
   final String title;
 
   @override
-  _SudokuGamePageState createState() => _SudokuGamePageState();
+  State<SudokuGamePage> createState() => _SudokuGamePageState();
 }
 
 class _SudokuGamePageState extends State<SudokuGamePage>
@@ -70,7 +70,7 @@ class _SudokuGamePageState extends State<SudokuGamePage>
 
   _aboutDialogAction(BuildContext context) {
     Widget appIcon = GestureDetector(
-        child: Image(
+        child: const Image(
             image: AssetImage("assets/image/sudoku_logo.png"),
             width: 45,
             height: 45),

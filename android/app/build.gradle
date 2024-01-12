@@ -1,3 +1,6 @@
+import java.util.regex.Matcher
+import java.util.regex.Pattern
+
 plugins {
     id "com.android.application"
     id "kotlin-android"
@@ -59,10 +62,46 @@ android {
             signingConfig signingConfigs.debug
         }
     }
+
+    flavorDimensions "app"
+    productFlavors {
+        dev {
+            dimension "app"
+           // applicationIdSuffix ".dev"
+        }
+        prod {
+            dimension "app"
+        }
+    }
+}
+
+def getCurrentFlavor() {
+    Gradle gradle = getGradle()
+    String  tskReqStr = gradle.getStartParameter().getTaskRequests().toString()
+
+    Pattern pattern
+    println(tskReqStr)
+    if( tskReqStr.contains( "assemble" ) )
+        pattern = Pattern.compile("assemble(\\w+)(Release|Debug)")
+    else if( tskReqStr.contains("bundle") )
+        pattern = Pattern.compile("bundle(\\w+)(Release|Debug)")
+    else
+        pattern = Pattern.compile("generate(\\w+)(Release|Debug)")
+
+    Matcher matcher = pattern.matcher( tskReqStr )
+
+    if( matcher.find() )
+        return matcher.group(1).toLowerCase()
+    else
+    {
+        println "NO MATCH FOUND"
+        return ""
+    }
 }
 
 flutter {
     source '../..'
+    target "lib/main_" + getCurrentFlavor() + ".dart"
 }
 
 dependencies {}
